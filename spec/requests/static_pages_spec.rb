@@ -9,7 +9,7 @@ describe "StaticPages" do
   # Method shared_examples_for by RSpec
   shared_examples_for "all static pages" do
     it { should have_selector('h1', text: heading) }
-    it { should have_title(full_title(page_title)) } #full_title method form spec/support/utilities.rb
+    it { should have_title(full_title(page_title)) }
   end
 
   describe "Home page" do
